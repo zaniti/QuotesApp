@@ -1,0 +1,35 @@
+<%- include('partials/header'); -%>
+    <div class="table-wrapper">
+        <% if (quotes.length > 0) {%>
+            <table class="table table-hovered">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Author</th>
+                        <th scope="col">Quote</th>
+                        <th scope="col">Source</th>
+                        <th scope="col">Edit / Delete</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% quotes.forEach((quote) => { %>
+                        <tr>
+                            <th scope="row"><%= quote.id %></th>
+                            <td><%= quote.name %></td>
+                            <td><%= quote.quote %></td>
+                            <td><%= quote.source %></td>
+                            <td>
+                                <a href="/edit/<%= quote.id %>" rel="noopener" class="btn btn-sm btn-success">Edit</a>
+                                <a href="/delete/<%= quote.id %>" class="btn btn-sm btn-danger">Delete</a>
+                            </td>
+                        </tr>
+                    <% }) %>
+                </tbody>
+            </table>
+        <% } else { %>
+            <p class="text-center">No Quotes found. Go <a href="/addQ" >here</a> to add a quote.</p>
+        <% } %>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<%- include('partials/header'); -%>
+<div class="container">
+    <% if (message) { %>
+        <p class="text-center text-danger"><%= message %></p>
+    <% } %>
+
+    <% if (quote) { %>
+        <form class="add-player-form" action="/edit/<%= quote.id %>" method="post">
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label for="first-name">Author's Name</label>
+                    <input type="text" class="form-control" name="name" id="name" value="<%= quote.name %>" required>
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="last-name">Source</label>
+                    <input type="text" class="form-control" name="source" id="source" value="<%= quote.source %>" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-8">
+                      <label for="username">Quote</label>
+                      <input type="text" class="form-control" name="quote" id="quote" value="<%= quote.quote %>" required>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-success float-right">Update Quote</button>
+        </form>
+    <% } else { %>
+        <p class="text-center">Quote Not Found. Go <a href="/addQ">here</a> to add a Quote.</p>
+    <% } %>
+</div>
+</div>
+</body>
+</html>
