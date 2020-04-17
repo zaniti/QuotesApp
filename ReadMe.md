@@ -2,20 +2,20 @@
 ## Application to Add/Update/Delete a Quote, Author, and It's source.
 ### How to use :
 
-# Install Required packages using NPM
+### Install Required packages using NPM
 
 ```bash
 npm install
 ```
 
-# Import the sql file (quotes-db.sql) to Mysql
+### Import the sql file (quotes-db.sql) to Mysql
 
-# Run the Application using node
+### Run the Application using node
 
 ```bash
 node server.js
 ```
 
-# Access The Application
+### Access The Application
 
  Type http://localhost:3000/ in your browser to acces the Application
