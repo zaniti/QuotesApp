@@ -20,5 +20,5 @@ node server.js
 
  Type http://localhost:3000/ in your browser to acces the Application
  
-#### mysql informations : 
+#### * mysql informations : 
 user: 'root' password: ''
