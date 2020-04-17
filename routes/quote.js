@@ -10,7 +10,10 @@ module.exports = {
           if (err) {
               return res.status(500).send(err);
           }else{
-            res.render('index', {quotes: result})
+            res.render('index', {
+              title: "Welcome to Zniti Quotes | All Quotes"
+              ,quotes: result
+            });
             // console.log(result);
           }
 
@@ -85,7 +88,7 @@ module.exports = {
                 return res.status(500).send(err);
             }
             res.render('edit-quote.ejs', {
-                title: "Edit  Quote"
+                title: "Welcome to Zniti Quotes | Edit  Quote"
                 ,quote: result[0]
                 ,message: ''
             });
