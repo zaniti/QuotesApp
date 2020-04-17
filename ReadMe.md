@@ -5,7 +5,7 @@
 #### 1. Install Required packages using NPM
 
 ```bash
-npm install
+> npm install
 ```
 
 #### 2. Import the sql file (quotes-db.sql) to Mysql
@@ -13,7 +13,7 @@ npm install
 #### 3. Run the Application using node
 
 ```bash
-node server.js
+> node server.js
 ```
 
 #### 4. Access The Application
