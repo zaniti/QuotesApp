@@ -19,3 +19,6 @@ node server.js
 #### 4. Access The Application
 
  Type http://localhost:3000/ in your browser to acces the Application
+ 
+#### mysql informations : 
+user: 'root' password: ''
